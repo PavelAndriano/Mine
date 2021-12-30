@@ -1,0 +1,22 @@
+// ! Шрифты сюда
+@import "_fonts";
+
+// Подключение файла, чтобы watch sass не собирал его в папку css
+@import "_nullstyle";
+// @import "_";
+// @import "_";
+// @import "_";
+// @import "_";
+// @import "_";
+
+// Переменные
+$maxWidthContainer: 1440;
+
+// Миксины
+
+// Миксы здесь
+.container {
+    max-width: $maxWidthContainer + 40px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

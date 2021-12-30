@@ -1,0 +1,14 @@
+// Converter ttf to woff & woff2: https://transfonter.org
+
+@mixin font($fontFamily, $fileName, $fontWeight, $fontStyle) {
+    @font-face {
+        font-display: swap;
+        font-family: $fontFamily;
+        font-weight: #{$fontWeight};
+        font-style: #{$fontStyle};
+        src: url("./../fonts/#{$fileName}.woff2") format("woff2"), url("./../fonts/#{$fileName}.woff") format("woff");
+    }
+}
+
+// Include font:
+// @include font("Product Sans", "ProductSans-Regular", "400", "normal");
